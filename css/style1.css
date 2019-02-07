@@ -4,14 +4,20 @@ body, ul, p, h1, h2 {
 }
 
 body {
-    background: black;
-    color: #fff; 
+    background: #efefef;
+    color: #000000; 
 }
 a {
     text-decoration: none;
 }
 
-li {
+hr {
+    height: 0px;
+    border: none;
+    border-top: 1px solid #DEDEDE;
+}
+li, dt, dd{
+    margin-inline-start: 0px;
     list-style: none;
 }
 
@@ -91,4 +97,72 @@ img {
 .banner .mask {
     height: 515px;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.userCard {
+    border: 1px solid red;
+    width: 60%;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.userCard .text{
+    margin:40px;
+}
+.userCard .text .picture {
+    width: 40%;    
+    float: left;
+}
+.userCard .text .profile {
+    width: 60%;
+    float: left;
+}
+
+.userCard .text .profile .welcome {
+    background: #e6686a;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 16px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.userCard .text .profile .triangle {
+    display: inline-block;
+    border: 10px solid transparent;
+    width: 0px;
+    border-left-color: #e6686a;
+    border-top-width: 0px;
+    position: absolute;
+    top: 100%;
+    left : 10px;
+}
+
+.userCard .text .profile dt,dd {
+    float:left;
+}
+
+.userCard .text .profile dt {
+    padding-top: 10px;
+    width: 30%;
+}
+
+.userCard .text .profile dd {
+    padding-top: 10px;
+    color: #9da0a7;
+    width: 70%;
+}
+
+.userCard .text .profile hr {
+    margin: 20px 0;
+}
+
+.userCard > footer.media {
+    background: #e6686a;
+}
+
+.userCard svg {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
 }
