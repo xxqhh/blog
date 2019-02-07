@@ -159,6 +159,7 @@ img {
 
 .userCard > footer.media {
     background: #e6686a;
+    text-align: center;
 }
 
 .userCard svg {
