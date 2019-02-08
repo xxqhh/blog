@@ -160,10 +160,22 @@ img {
 .userCard > footer.media {
     background: #e6686a;
     text-align: center;
+    padding:10px 0;
 }
 
+.userCard > footer.media > a {
+    display: inline-block;
+    width: 40px;
+    line-height: 30px;
+    padding: 5px 0;
+    border-radius: 50%;
+}
+.userCard > footer.media > a:hover{
+    background: #CF5D5F;
+}
 .userCard svg {
     width: 30px;
     height: 30px;
     fill: #fff;
+    vertical-align: top;
 }
