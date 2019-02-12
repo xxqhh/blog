@@ -20,7 +20,9 @@ li, dt, dd{
     margin-inline-start: 0px;
     list-style: none;
 }
-
+ol {
+    padding-inline-start: 0px;
+}
 img {
     vertical-align: center;
 }
@@ -100,10 +102,11 @@ img {
 }
 
 .userCard {
-    border: 1px solid red;
+    border: 1px solid #efefef;
     width: 60%;
     background: #fff;
     margin: 0 auto;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 }
 
 .userCard .text{
@@ -178,4 +181,156 @@ img {
     height: 30px;
     fill: #fff;
     vertical-align: top;
+}
+
+body > main {
+    margin-top: -340px;
+}
+
+body > main .downloadResume-wrapper {
+    text-align: center;
+}
+body > main .downloadResume {
+    border:1px solid #cdcfd1;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 21px 55px;
+    display: inline-block;
+    background: #efefef;
+    border-radius: 2px;
+    color: #3d4451;
+    font-weight: bold;
+    margin: 32px;
+    transition: box-shadow 0.2s;
+}
+
+body > main .downloadResume:hover {
+    box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.2);
+}
+
+.self-introduction {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.skills,
+section.portfolio {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+section.skills > h2,
+section.portfolio > h2 {
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+section.skills h3 {
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;
+}
+section.skills > ol {
+    background: white;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+    padding: 42px 50px 10px;
+}
+
+section.skills > ol > li {
+    float: left;
+    width: 49%;
+}
+section.skills > ol > li:nth-child(even) {
+    margin-left: 20px;
+}
+section.skills .progressBar {
+    height: 5px;
+    background: #fae1e1;
+    border-radius: 2px;
+    margin: 4px 0 40px;
+}
+
+section.skills .progress {
+    height: 100%;
+    background: #e6686a;
+    width: 60%;
+}
+
+section.portfolio {
+    text-align: center;
+}
+section.portfolio > nav {
+    margin-top: 32px;
+    text-align: center;
+}
+section.portfolio > nav > ol {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+section.portfolio > nav > ol > li{
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+section.portfolio > nav > ol > li:first-child{
+    margin-left: 0px;
+}
+
+section.portfolio > nav {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+section.portfolio > nav .bar {
+    height: 5px;
+    background: white;
+    margin-top: 5px;
+    margin-bottom: 100px;
+    border-radius: 2px;
+}
+
+section.portfolio > nav .bar-inner {
+    height: 100%;
+    background: #e6686a;
+    
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+section.portfolio > nav .bar.state-1 .bar-inner {
+    margin-left:0;
+    width:50px;
+}
+
+section.portfolio > nav .bar.state-2 .bar-inner {
+    margin-left:50px;
+    width:90px;
+}
+
+section.portfolio > nav .bar.state-3 .bar-inner {
+    margin-left: 140px;
+    width: 96px;
+}
+
+section.portfolio .works {
+    width:80%;margin: 0 auto;
+    padding:10px;
+    position: relative;
+}
+
+section.portfolio .works > .big,
+section.portfolio .works > .small {
+    position: absolute;
 }
